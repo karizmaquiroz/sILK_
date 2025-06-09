@@ -1,13 +1,14 @@
-#Paging Future Dr. Arrow
+# Paging Future Dr. Arrow
 Educational Game Design - Stem Cell (Bone Marrow Transplant)
 
-##Members
+## Members
 
-Ivy Stansel [GitHub Account](https://github.com/Frame-solid) 
-Lisbeth Martinez [GitHub Account](https://github.com/lismar17)
-Karizma Quiroz [GitHub Account](https://github.com/karizmaquiroz)
+Ivy Stansel [GitHub Account](https://github.com/Frame-solid).
+Lisbeth Martinez [GitHub Account](https://github.com/lismar17).
+Karizma Quiroz [GitHub Account](https://github.com/karizmaquiroz).
 
-##Table of Contents
+## Table of Contents
+
 -[Overview](#overview)
 
 -[Learning Outcome](learning-outcome)
@@ -21,20 +22,20 @@ Karizma Quiroz [GitHub Account](https://github.com/karizmaquiroz)
 -[Notes](notes)
 
 
-###Overview
+### Overview
 
-###Learning Outcome
+### Learning Outcome
 
-###Objectives
+### Objectives
 
-###Narrative
+### Narrative
 
-###Mechanics
+### Mechanics
 
-###Level Design
+### Level Design
 
 
-##Notes
+## Notes
 
 
 
