@@ -4,7 +4,9 @@ Educational Game Design - Stem Cell (Bone Marrow Transplant)
 ## Members
 
 Ivy Stansel [GitHub Account](https://github.com/Frame-solid).
+
 Lisbeth Martinez [GitHub Account](https://github.com/lismar17).
+
 Karizma Quiroz [GitHub Account](https://github.com/karizmaquiroz).
 
 ## Table of Contents
