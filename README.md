@@ -31,7 +31,7 @@ Educational Game Design - Stem Cell (Bone Marrow Transplant)
 
 
 ## Notes
-  -[Members](members)
+-[Members](members)
   
 ### Members
 
