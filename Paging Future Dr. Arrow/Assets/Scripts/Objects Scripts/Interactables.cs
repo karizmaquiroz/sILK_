@@ -15,20 +15,22 @@ public class Interactables : MonoBehaviour
     private Text interaction_Debreif_Text;//ref to the text element (debrief text/notes on BMT)
 
 
-    [SerializeFeild] GameObject miniGame; //can be a physical 2d object or change to open a minigame scene
+    //[SerializeFeild] GameObject miniGame; //can be a physical 2d object or change to open a minigame scene
 
     GameObject highlight; //object glows in range so player knows it is grabble/playable
 
 
-    void start()
+    void Start()
     {
         //get text component if interaction_debreif_UI is the parent)
+        /*
         if (interaction_debrief_UI != null)
         {
             interaction_text = interaction_debreif_UI.GetComponentInChildren<Text>();
             interaction_debreif_UI.SetActive(false); //text will be hidden on start
 
         }
+        */
     }
 
 
@@ -46,7 +48,7 @@ public class Interactables : MonoBehaviour
             if (interaction_debreif_UI != null)
             {
                 interaction_debreif_UI.SetActive(true);//shows the text
-                interaction_.Text = "Press [E} to read Me!";// set the text message
+                //interaction_.Text = "Press [E} to read Me!";// set the text message
 
             }
         }
@@ -84,6 +86,6 @@ public class Interactables : MonoBehaviour
 
     public void PlayMiniGame()
     {
-        miniGame.SetActive(true); //if using scene minigame this should be a scene changer
+        //miniGame.SetActive(true); //if using scene minigame this should be a scene changer
     }
 }
