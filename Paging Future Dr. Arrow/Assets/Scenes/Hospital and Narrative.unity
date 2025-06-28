@@ -270,7 +270,10 @@ CapsuleCollider:
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!114 &164982464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2254,7 +2257,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1443851993}
+    m_TransformParent: {fileID: 565227395}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: aca6bb75652212e4abffc94fef322d17, type: 3}
       propertyPath: m_LocalScale.x
@@ -2391,7 +2394,11 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 968a649200f19c944a62b5c6f4dd27b8, type: 3}
       propertyPath: m_LocalPosition.y
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       value: 5.1130524
+=======
+      value: -0.17604256
+>>>>>>> Stashed changes
 =======
       value: -0.17604256
 >>>>>>> Stashed changes
