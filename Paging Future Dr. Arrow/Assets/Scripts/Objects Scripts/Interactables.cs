@@ -10,24 +10,24 @@ using Text = UnityEngine.UI.Text;
 
 public class Interactables : MonoBehaviour
 {
-    public GameObject interaction_debreif_UI; //ref to Canvas or Text parent
+    public GameObject interaction_debrief_UI; //ref to Canvas or Text parent
     private Text interaction_text; //ref to the Text element
-    private Text interaction_Debreif_Text;//ref to the text element (debrief text/notes on BMT)
+    private Text interaction_Debrief_Text;//ref to the text element (debrief text/notes on BMT)
 
 
-    //[SerializeFeild] GameObject miniGame; //can be a physical 2d object or change to open a minigame scene
+    [SerializeField] GameObject miniGame; //can be a physical 2d object or change to open a minigame scene
 
     GameObject highlight; //object glows in range so player knows it is grabble/playable
 
 
     void Start()
     {
-        //get text component if interaction_debreif_UI is the parent)
+        //get text component if interaction_Debrief_UI is the parent)
         /*
         if (interaction_debrief_UI != null)
         {
-            interaction_text = interaction_debreif_UI.GetComponentInChildren<Text>();
-            interaction_debreif_UI.SetActive(false); //text will be hidden on start
+            interaction_text = interaction_Debrief_UI.GetComponentInChildren<Text>();
+            interaction_Debrief_UI.SetActive(false); //text will be hidden on start
 
         }
         */
@@ -45,15 +45,10 @@ public class Interactables : MonoBehaviour
         {
             highlight.SetActive(true);
 
-            if (interaction_debreif_UI != null)
+            if (interaction_debrief_UI != null)
             {
-<<<<<<< Updated upstream
-                interaction_debreif_UI.SetActive(true);//shows the text
-                //interaction_.Text = "Press [E} to read Me!";// set the text message
-=======
                 interaction_debrief_UI.SetActive(true);//shows the text
                 interaction_text.Text = "Press [E} to read Me!";// set the text message
->>>>>>> Stashed changes
 
             }
         }
@@ -65,9 +60,9 @@ public class Interactables : MonoBehaviour
         {
             highlight.SetActive(false);
 
-            if (interaction_debreif_UI != null)
+            if (interaction_debrief_UI != null)
             {
-                interaction_debreif_UI.SetActive(false);//hide the text
+                interaction_debrief_UI.SetActive(false);//hide the text
     
             }
         }
@@ -77,7 +72,7 @@ public class Interactables : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            interaction_Debreif_Text.gameObject.SetActive(true);
+            interaction_Debrief_Text.gameObject.SetActive(true);
 
         }
 
@@ -86,7 +81,7 @@ public class Interactables : MonoBehaviour
     void DisplayPassage()
     {
         //set the debrief text content for the passage
-        interaction_Debreif_Text.text = "All Debreif text goes here.";
+        interaction_Debrief_Text.text = "All Debrief text goes here.";
     }
 
     public void PlayMiniGame()
