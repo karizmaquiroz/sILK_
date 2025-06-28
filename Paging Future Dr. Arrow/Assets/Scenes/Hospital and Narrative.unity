@@ -271,7 +271,10 @@ CapsuleCollider:
   m_Center: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!114 &164982464
@@ -2395,7 +2398,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       value: 5.1130524
+=======
+      value: -0.17604256
+>>>>>>> Stashed changes
 =======
       value: -0.17604256
 >>>>>>> Stashed changes
