@@ -47,8 +47,13 @@ public class Interactables : MonoBehaviour
 
             if (interaction_debreif_UI != null)
             {
+<<<<<<< Updated upstream
                 interaction_debreif_UI.SetActive(true);//shows the text
                 //interaction_.Text = "Press [E} to read Me!";// set the text message
+=======
+                interaction_debrief_UI.SetActive(true);//shows the text
+                interaction_text.Text = "Press [E} to read Me!";// set the text message
+>>>>>>> Stashed changes
 
             }
         }
