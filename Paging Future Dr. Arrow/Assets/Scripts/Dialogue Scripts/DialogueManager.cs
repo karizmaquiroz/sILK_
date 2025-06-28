@@ -6,19 +6,19 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI speakerName, dialogue, navButtonText;
-    //public Image speakerSprite;
+    public Image speakerSprite;
 
     private int currentIndex;
     private Conversation currentConvo;
     private static DialogueManager instance;
-    //private Animator anim;
+    private Animator anim;
     private Coroutine typing;
 
     private void Awake()
     {
         if (instance == null) {
             instance = this;
-            //anim = GetComponent<Animator>();
+            anim = GetComponent<Animator>();
         }
         else {
             Destroy(gameObject);
@@ -27,23 +27,23 @@ public class DialogueManager : MonoBehaviour
 
     public static void StartConversation(Conversation convo)
     {
-        //instance.anim.SetBool("isOpen", true);
+        instance.anim.SetBool("isOpen", true);
         instance.currentIndex = 0;
         instance.currentConvo = convo;
-        //instance.speakerName.text = "";
+        instance.speakerName.text = "";
         instance.dialogue.text = "";
-        //instance.navButtonText.text = ">";
+        instance.navButtonText.text = ">";
 
         instance.ReadNext();
     }
 
     public void ReadNext()
     {
-        //if (currentIndex > currentConvo.GetLength()) {
-        //    instance.anim.SetBool("isOpen", false);
-        //    return;
-        //}
-        //speakerName.text = currentConvo.GetLineByIndex(currentIndex).speaker.GetName();
+        if (currentIndex > currentConvo.GetLength()) {
+            instance.anim.SetBool("isOpen", false);
+            return;
+        }
+        speakerName.text = currentConvo.GetLineByIndex(currentIndex).speaker.GetName();
 
         if (typing == null) {
             typing = instance.StartCoroutine(TypeText(currentConvo.GetLineByIndex(currentIndex).dialogue));
@@ -53,13 +53,13 @@ public class DialogueManager : MonoBehaviour
             typing = null;
             typing = instance.StartCoroutine(TypeText(currentConvo.GetLineByIndex(currentIndex).dialogue));
         }
-        //speakerSprite.sprite = currentConvo.GetLineByIndex(currentIndex).speaker.GetSprite();
+        speakerSprite.sprite = currentConvo.GetLineByIndex(currentIndex).speaker.GetSprite();
 
         currentIndex++;
 
-        //if (currentIndex >= currentConvo.GetLength()) {
-        //    navButtonText.text = "x";
-        //}
+        if (currentIndex >= currentConvo.GetLength()) {
+            navButtonText.text = "x";
+        }
     }
 
     private IEnumerator TypeText(string text)
@@ -78,6 +78,5 @@ public class DialogueManager : MonoBehaviour
             }
         }
         typing = null;
-        this.gameObject.SetActive(false);
     }
 }
