@@ -64,7 +64,7 @@ public class Interactables : MonoBehaviour
             {
                 interaction_debreif_UI.SetActive(false);//hide the text
     
-        }
+            }
         }
     }
 
