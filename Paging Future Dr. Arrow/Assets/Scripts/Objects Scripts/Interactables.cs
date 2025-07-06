@@ -3,6 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using static System.Net.Mime.MediaTypeNames;
+using static UnityEditor.FilePathAttribute;
 using static UnityEngine.AdaptivePerformance.Provider.AdaptivePerformanceSubsystemDescriptor;
 using Text = UnityEngine.UI.Text;
 
@@ -12,14 +13,15 @@ using Text = UnityEngine.UI.Text;
 
 public class Interactables : MonoBehaviour
 {
+
     public GameObject interaction_debrief_UI; //ref to Canvas or Text parent
     private Text interaction_text; //ref to the Text element
     private Text interaction_Debrief_Text;//ref to the text element (debrief text/notes on BMT)
 
     //npc dialogue interactions
-    [SerializeField] private string prompt;
-    [SerializeField] private GameObject uiPanel;
-    [SerializeField] private TextMeshPro promptText;
+    [SerializeField] private string prompt; // prompt when interacting with object/person such as "read" or "speak"
+    [SerializeField] private GameObject uiPanel; // panel for prompt text
+    [SerializeField] private TextMeshPro promptText; // in game display of text string
     
     public Conversation convo;
     public bool isDisplayed = false;
@@ -41,7 +43,6 @@ public class Interactables : MonoBehaviour
 
         }
         */
-
         uiPanel.SetActive(false);
     }
 
@@ -65,7 +66,7 @@ public class Interactables : MonoBehaviour
         if (other.tag == "Player")
         {
             highlight.SetActive(true);
-            SetUp(this.prompt);
+            SetUp();
 
             if (interaction_debrief_UI != null)
             {
@@ -117,9 +118,8 @@ public class Interactables : MonoBehaviour
         //miniGame.SetActive(true); //if using scene minigame this should be a scene changer
     }
 
-    public void SetUp(string prompt)
+    public void SetUp()
     {
-        promptText.text = prompt;
         uiPanel.SetActive(true);
         isDisplayed = true;
     }

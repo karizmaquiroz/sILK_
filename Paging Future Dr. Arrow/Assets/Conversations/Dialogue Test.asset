@@ -13,7 +13,5 @@ MonoBehaviour:
   m_Name: Dialogue Test
   m_EditorClassIdentifier: 
   allLines:
-  - speaker: {fileID: 11400000, guid: 8058287187d3c5a4681a483652767b09, type: 2}
-    dialogue: Hello! I am here to test the dialogue system.
-  - speaker: {fileID: 11400000, guid: 8058287187d3c5a4681a483652767b09, type: 2}
-    dialogue: Hello! I am here to test the dialogue system.
+  - dialogue: Hello! I am here to test the dialogue system.
+  - dialogue: I'm still testing it!
