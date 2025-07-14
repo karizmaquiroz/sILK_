@@ -7,9 +7,13 @@ public class CellBounce : MonoBehaviour
     // Drag and drop Rigidbody in Inspector
     public Rigidbody rb;
     public Vector3 velocity;
+    public bool StemCellAquired = false;
+    private GameObject StemCell;
 
     void Start()
     {
+        StemCell = this.gameObject;
+
         // Add force once at start
         rb.AddForce(Vector3.forward * 3.0f, ForceMode.VelocityChange);
     }
@@ -30,5 +34,19 @@ public class CellBounce : MonoBehaviour
 
         // Like earlier wrote: velocity vector is magnitude (speed) and direction (a new one)
         rb.linearVelocity = direction * speed;
+    }
+
+    void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(0) && this.CompareTag("StemCell")){
+            this.gameObject.SetActive(false);
+            StemCellAquired = true;
+        }
+
+        if (Input.GetMouseButtonDown(0) && StemCellAquired == true) {
+            this.gameObject.SetActive(true);
+            StemCellAquired = false;
+            StemCell.transform.position = new Vector3(5, -3.35f, -6.82f);
+        }
     }
 }
