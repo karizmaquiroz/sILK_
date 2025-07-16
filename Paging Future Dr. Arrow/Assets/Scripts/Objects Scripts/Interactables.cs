@@ -48,7 +48,7 @@ public class Interactables : MonoBehaviour
             if (interaction_debrief_UI != null)
             {
                 interaction_debrief_UI.SetActive(true);//shows the text
-                interaction_text.Text = "Press [E} to read Me!";// set the text message
+                //interaction_text.Text = "Press [E} to read Me!";// set the text message
 
             }
         }
