@@ -15,7 +15,7 @@ public class Interactables : MonoBehaviour
     private Text interaction_Debrief_Text;//ref to the text element (debrief text/notes on BMT)
 
 
-    [SerializeField] GameObject miniGame; //can be a physical 2d object or change to open a minigame scene
+    //[SerializeField] GameObject miniGame; //can be a physical 2d object or change to open a minigame scene
 
     GameObject highlight; //object glows in range so player knows it is grabble/playable
 
@@ -48,7 +48,7 @@ public class Interactables : MonoBehaviour
             if (interaction_debrief_UI != null)
             {
                 interaction_debrief_UI.SetActive(true);//shows the text
-                //interaction_text.Text = "Press [E} to read Me!";// set the text message
+                //interaction_.Text = "Press [E} to read Me!";// set the text message
 
             }
         }
