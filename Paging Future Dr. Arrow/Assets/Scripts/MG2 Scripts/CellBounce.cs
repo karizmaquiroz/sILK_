@@ -7,12 +7,16 @@ public class CellBounce : MonoBehaviour
     // Drag and drop Rigidbody in Inspector
     public Rigidbody rb;
     public Vector3 velocity;
-    public bool StemCellAquired = false;
-    private GameObject StemCell;
+
+    // Cell backnforth handling
+    private bool cellAquired = false;
+    private GameObject cell;
+    private bool state = false;
+    [SerializeField] string cType;
 
     void Start()
     {
-        StemCell = this.gameObject;
+        cell = this.gameObject;
 
         // Add force once at start
         rb.AddForce(Vector3.forward * 3.0f, ForceMode.VelocityChange);
@@ -38,15 +42,28 @@ public class CellBounce : MonoBehaviour
 
     void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0) && this.CompareTag("StemCell")){
+        if (Input.GetMouseButtonDown(0) && this.CompareTag("Cell")){
             this.gameObject.SetActive(false);
-            StemCellAquired = true;
+            cellAquired = true;
         }
 
-        if (Input.GetMouseButtonDown(0) && StemCellAquired == true) {
+        if (state == false && Input.GetMouseButtonDown(0) && cellAquired == true) {
             this.gameObject.SetActive(true);
-            StemCellAquired = false;
-            StemCell.transform.position = new Vector3(5, -3.35f, -6.82f);
+            cellAquired = false;
+            cell.transform.position = new Vector3(5, -3.35f, -6.82f);
+            state = true;
         }
+
+        if (state == true && Input.GetMouseButtonDown(0) && cellAquired == true) {
+            this.gameObject.SetActive(true);
+            cellAquired = false;
+            cell.transform.position = new Vector3(-1.8f, -3.35f, -7.32f);
+            state = false;
+        }
+    }
+
+    public string GetCType()
+    {
+        return cType;
     }
 }

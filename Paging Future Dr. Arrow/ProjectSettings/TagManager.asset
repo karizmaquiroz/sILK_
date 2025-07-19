@@ -5,8 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - NPC
-  - StemCell
-  - DropZone
+  - Cell
   layers:
   - Default
   - TransparentFX
