@@ -41,7 +41,7 @@ public class GameStates : MonoBehaviour
         else {
             gameisrunning = true;
         }
-        Debug.Log(level + "is running" + gameisrunning + " is checked" + scoreChecked + timer.timeRemaining);
+        //Debug.Log(level + "is running" + gameisrunning + " is checked" + scoreChecked + timer.timeRemaining);
     }
 
     public int Score(int score)
@@ -122,7 +122,7 @@ public class GameStates : MonoBehaviour
                 break;
             case 3:
                 for (int i = 0; i < numBCells; i++) {
-                    GameObject instantiatedObject = Instantiate(bCell, new Vector3((i * .4f) + -4f, -3.22f, (i * .4f) + -7.32f), Quaternion.identity) as GameObject;
+                    GameObject instantiatedObject = Instantiate(bCell, new Vector3((i * .4f) + -5f, -3.22f, (i * .4f) + -7.32f), Quaternion.identity) as GameObject;
                     instantiatedObject.name = "bCell " + i.ToString();
                     instantiatedObject.GetComponent<CellBounce>().velocity = new Vector3(speed, 0f, 0f);
                     allCells3.Add(instantiatedObject);
