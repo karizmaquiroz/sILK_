@@ -11,7 +11,7 @@ public class CellBounce : MonoBehaviour
     // Cell backnforth handling
     private bool cellAquired = false;
     private GameObject cell;
-    private bool state = false;
+    public bool state = false;
     [SerializeField] string cType;
 
     void Start()

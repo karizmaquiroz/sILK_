@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
     private void Start()
     {
         // Starts the timer automatically
-        timerIsRunning = true;
+        timerIsRunning = false;
     }
 
     void Update()
@@ -24,7 +24,6 @@ public class Timer : MonoBehaviour
                 DisplayTime(timeRemaining);
             }
             else {
-                Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
             }
