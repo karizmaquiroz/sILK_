@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b411ba44c0ad96541bd0891a82382699, type: 3}
+  m_Name: ClipboardData
+  m_EditorClassIdentifier: 
+  noteID: 1
+  noteName: DebriefPaper
+  noteIcon: {fileID: 0}
+  addToInventory: 0
+  pageImages: []
+  pageScale: {x: 900, y: 900}
+  showTextOnMainPage: 0
+  showNavigationButtons: 1
+  pageText:
+  - "\t\tIntro to Bone Marrow transplant\n\tChapter 1: The Pre-Transplant Evaluation\r\n\nObjective:\n\tUnderstand
+    what bone marrow does and why a transplant might be needed. While also learning
+    the science behind a donor match.\r\n"
+  - "Bone Marrow Transplant\r\nWhat is Bone Marrow\r\nBone marrow is the soft, spongy
+    tissue inside bones that produces:\r\n\u2022\tRed blood cells (carry oxygen)\r\n\u2022\tWhite
+    blood cells (fight infection)\r\n\u2022\tPlatelets (help blood clot)\r\n\r\r\nUsed
+    to:\r\n\u2022\tTreat blood cancers (like leukemia, lymphoma, multiple myeloma)\r\n\u2022\tTreat
+    bone marrow failure syndromes (like aplastic anemia)\r\n\u2022\tReplace marrow
+    destroyed by high-dose chemotherapy or radiation\r\n\u2022\tTreat some genetic
+    diseases (like sickle cell disease or thalassemia)\r\n"
+  - "Types of Transplants\n\r\n1.\tAutologous Transplant\r\nUses your own stem cells
+    (collected before treatment and given back after).\r\n2.\tAllogeneic Transplant\r\nUses
+    stem cells from a donor (often a sibling, relative, or matched unrelated donor).\r\n3.\tHaploidentical
+    Transplant\r\nUses a partially matched donor (often a parent or child).\r\n4.\tUmbilical
+    Cord Blood Transplant\r\nUses stem cells from donated umbilical cord blood.\r\n"
+  - "HLA (Human Leukocyte Antigen) is a group of proteins found on most cells in
+    your body. They help your immune system recognize which cells belong in your
+    body and which are foreign.\n\nIn a transplant, donor HLA markers must closely
+    match the recipient\u2019s so the body doesn\u2019t attack the new cells.\n\nHLA
+    genes are inherited, so siblings have a 25% chance of being a perfect match."
+  - "\tChapter 2: Conditioning (Prep Phase):\r\t\nObjective:\n\tLearn about chemotherapy/radiation
+    to suppress the immune system to prevent transplant rejection and destroy diseased
+    marrow.\r"
+  - "\tChemotherapy travels through the bloodstream, targeting fast-growing cells
+    all over the body.\n\nIt destroys:\n\u2022\tDiseased bone marrow cells\n\u2022\tCancer
+    cells (like leukemia)\n\u2022\tSome healthy fast-growing cells (which can cause
+    side effects)\n\nIn bone marrow transplants:\n\tUsed to \"clean out\" the bone
+    marrow, making room for new stem cells.\n\tAlso suppresses the immune system
+    to prevent it from attacking the transplanted cells.\r"
+  - "\tDebrief of ch 3"
+  - "\tChapter 3: The Stem Cell Infusion (Transplant)\nObjective:\n\tUnderstand the
+    transplant process (IV infusion of stem cells, post-monitoring). Specifically
+    with the stem cells travel through your bloodstream to your bone marrow, where
+    they begin to grow in addition to the Engraftment Phase\r\n"
+  mainTextAreaScale: {x: 495, y: 795}
+  mainTextSize: 25
+  mainFontAsset: {fileID: 0}
+  mainFontColor: {r: 0, g: 0, b: 0, a: 1}
+  enableOverlayText: 0
+  showOverlayOnOpen: 0
+  overlayBGColor: {r: 1, g: 1, b: 1, a: 1}
+  overlayTextAreaScale: {x: 1045, y: 300}
+  overlayTextBGScale: {x: 1160, y: 300}
+  overlayTextSize: 25
+  overlayFontAsset: {fileID: 0}
+  overlayFontColor: {r: 0, g: 0, b: 0, a: 1}
+  isNoteTrigger: 0
