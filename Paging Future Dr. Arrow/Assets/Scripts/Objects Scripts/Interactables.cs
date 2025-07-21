@@ -48,7 +48,8 @@ public class Interactables : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isDisplayed & this.CompareTag("NPC")) {
+        if (this.GetComponent<IsVisible>().IsObjectVisible() && isDisplayed && this.CompareTag("NPC")) {
+            //Debug.Log("Read");
             if (Input.GetMouseButtonDown(0)) {
                 DialogueManager.StartConversation(convo);
             }
