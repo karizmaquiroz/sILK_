@@ -54,7 +54,20 @@ MonoBehaviour:
     transplant process (IV infusion of stem cells, post-monitoring). Specifically
     with the stem cells travel through your bloodstream to your bone marrow, where
     they begin to grow in addition to the Engraftment Phase\r\n"
-  - "\tDebrief of ch 3"
+  - "\tSTEM CELL TRAVEL & SETTLEMENT\r\nAfter infusion:\r\n\u2022\tThe stem cells
+    circulate through the bloodstream.\r\n\u2022\tThey attach to the bone marrow.
+    The stem cells migrate and find their way to the spaces in your bones where blood
+    cells are produced.\r\nWhy it works:\r\n\u2022\tStem cells have natural chemical
+    signals that guide them to the bone marrow, where they settle and start to rebuild
+    the blood and immune system.\r\n"
+  - "\t ENGRAFTMENT PHASE\r\nWhat is engraftment?\r\n\u2022\tEngraftment is when
+    the transplanted stem cells begin to grow and make new blood cells:\r\no\tRed
+    blood cells (carry oxygen)\r\no\tWhite blood cells (fight infections)\r\no\tPlatelets
+    (help blood clot)\r\n"
+  - "\tPOST-TRANSPLANT MONITORING\r\n What\u2019s monitored:\r\n\u2022\tBlood counts
+    (to track engraftment progress)\r\n\u2022\tInfection risks (since the immune
+    system is rebuilding)\r\n\u2022\tGraft-versus-host disease (GVHD) (if donor cells
+    are used)\r\n\u2022\tOrgan function\r"
   mainTextAreaScale: {x: 495, y: 795}
   mainTextSize: 25
   mainFontAsset: {fileID: 0}
