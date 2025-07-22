@@ -14,9 +14,14 @@ using Text = UnityEngine.UI.Text;
 public class Interactables : MonoBehaviour
 {
 
+    [SerializeField] private ClipboardData noteData = null; //used for the clipboard debrief
+
+
     public GameObject interaction_debrief_UI; //ref to Canvas or Text parent
     private Text interaction_text; //ref to the Text element
     private Text interaction_Debrief_Text;//ref to the text element (debrief text/notes on BMT)
+
+
 
     //npc dialogue interactions
     [SerializeField] private string prompt; // prompt when interacting with object/person such as "read" or "speak"
@@ -30,6 +35,17 @@ public class Interactables : MonoBehaviour
     //[SerializeField] GameObject miniGame; //can be a physical 2d object or change to open a minigame scene
 
     GameObject highlight; //object glows in range so player knows it is grabble/playable
+
+
+
+   
+
+    public void ShowNote()
+    {
+        ClipboardController.instance.CurrentNoteSource = ClipboardController.NoteSource.World;
+        ClipboardController.instance.ShowNote(noteData);
+    }
+
 
 
     void Start()

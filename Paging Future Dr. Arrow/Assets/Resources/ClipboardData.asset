@@ -50,11 +50,11 @@ MonoBehaviour:
     side effects)\n\nIn bone marrow transplants:\n\tUsed to \"clean out\" the bone
     marrow, making room for new stem cells.\n\tAlso suppresses the immune system
     to prevent it from attacking the transplanted cells.\r"
-  - "\tDebrief of ch 3"
   - "\tChapter 3: The Stem Cell Infusion (Transplant)\nObjective:\n\tUnderstand the
     transplant process (IV infusion of stem cells, post-monitoring). Specifically
     with the stem cells travel through your bloodstream to your bone marrow, where
     they begin to grow in addition to the Engraftment Phase\r\n"
+  - "\tDebrief of ch 3"
   mainTextAreaScale: {x: 495, y: 795}
   mainTextSize: 25
   mainFontAsset: {fileID: 0}
