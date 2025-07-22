@@ -1165,9 +1165,9 @@ MonoBehaviour:
   noteData: {fileID: 0}
   interaction_debrief_UI: {fileID: 0}
   prompt: 
-  uiPanel: {fileID: 0}
+  uiPanel: {fileID: 259909440}
   promptText: {fileID: 0}
-  convo: {fileID: 0}
+  convo: {fileID: 11400000, guid: 4d91098da69c93f47a1a76de29110102, type: 2}
   isDisplayed: 0
 --- !u!136 &278701552
 CapsuleCollider:
@@ -1734,7 +1734,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422471831}
   m_LocalRotation: {x: 0.675518, y: 0.20898686, z: 0.20898686, w: 0.675518}
-  m_LocalPosition: {x: 0, y: 0, z: 1.4030504}
+  m_LocalPosition: {x: 0, y: 0, z: 1.22}
   m_LocalScale: {x: 0.049999997, y: 0.049999986, z: 0.06500998}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1743,7 +1743,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 3.359478, y: -12.100019}
+  m_AnchoredPosition: {x: -0.42, y: -0.34}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &422471833
@@ -6962,9 +6962,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 968a649200f19c944a62b5c6f4dd27b8, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1572121030}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 968a649200f19c944a62b5c6f4dd27b8, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1572121031}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 968a649200f19c944a62b5c6f4dd27b8, type: 3}
       insertIndex: -1
@@ -6981,25 +6978,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 968a649200f19c944a62b5c6f4dd27b8, type: 3}
   m_PrefabInstance: {fileID: 1572121028}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1572121030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214021932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa63ae00175d2644ebec300763244cb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noteData: {fileID: 0}
-  interaction_debrief_UI: {fileID: 0}
-  prompt: 
-  uiPanel: {fileID: 0}
-  promptText: {fileID: 0}
-  convo: {fileID: 0}
-  isDisplayed: 0
 --- !u!65 &1572121031
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7093,7 +7071,7 @@ MonoBehaviour:
   noteData: {fileID: 11400000, guid: 340ff99c68b9e5d47b38008b29c3e5ed, type: 2}
   interaction_debrief_UI: {fileID: 0}
   prompt: 
-  uiPanel: {fileID: 0}
+  uiPanel: {fileID: 422471831}
   promptText: {fileID: 0}
   convo: {fileID: 0}
   isDisplayed: 0
@@ -7829,9 +7807,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca4e9e8a8b48e94dbbd77d044f40beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactKey: 0
-  closeKey: 0
-  reverseKey: 0
+  interactKey: 32
+  closeKey: 27
+  reverseKey: 8
   persistAcrossScenes: 1
 --- !u!4 &1950098296
 Transform:

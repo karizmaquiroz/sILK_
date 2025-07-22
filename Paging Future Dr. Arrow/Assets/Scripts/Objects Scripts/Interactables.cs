@@ -69,6 +69,11 @@ public class Interactables : MonoBehaviour
             if (Input.GetMouseButtonDown(0)) {
                 DialogueManager.StartConversation(convo);
             }
+        } else if (this.GetComponent<IsVisible>().IsObjectVisible() && isDisplayed && this.name == "clipboard"){
+            if (Input.GetMouseButtonDown(0)) {
+                // HERE HERE HERE LOOK HERE THIS IS WHERE YOU INPUT THE THING FOR THE CLICK/TAP CONTROL Put the method that opens the clipbaord in here
+                Debug.Log("IT RUNS");
+            }
         }
     }
 
