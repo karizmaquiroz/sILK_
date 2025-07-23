@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameStates : MonoBehaviour
 {
@@ -22,12 +23,21 @@ public class GameStates : MonoBehaviour
     public GameObject vial;
     private Animation vialAnimation;
 
+    public GameObject stars1;
+    public GameObject stars2;
+    public GameObject stars3;
+    public GameObject returnButton;
+
     void Awake()
     {
         vialAnimation = vial.GetComponent<Animation>();
         nextbutton.SetActive(false);
+        returnButton.SetActive(false);
         gameisrunning = true;
         scoreChecked = false;
+        stars1.SetActive(false);
+        stars2.SetActive(false);
+        stars3.SetActive(false);
     }
 
     // Update is called once per frame
@@ -81,7 +91,18 @@ public class GameStates : MonoBehaviour
             }
             scoreChecked = true;
             
+            if (level < 3) { 
             nextbutton.SetActive(true);
+            } else {
+                if (score < 4) {
+                stars1.SetActive(true);
+                } if (score < 7) {
+                    stars2.SetActive(true);
+                } if (score == 9) {
+                    stars3.SetActive(true);
+                }
+                returnButton.SetActive(true);
+            }
         }
 
         return score;
@@ -184,5 +205,10 @@ public class GameStates : MonoBehaviour
         level++;
         vialAnimation.Play("MG2_BVMovement");
         scoreChecked = false;
+    }
+
+    public void ExitScene()
+    {
+        SceneManager.LoadScene("Hospital and Narrative");
     }
 }
