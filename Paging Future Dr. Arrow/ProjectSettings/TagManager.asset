@@ -14,9 +14,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Cells
+  - Background
+  - Bones Cell
   - 
   - 
   - 
@@ -43,6 +43,18 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 93113989
+    locked: 0
+  - name: Bone
+    uniqueID: 4045825349
+    locked: 0
+  - name: Cells Black
+    uniqueID: 1553372219
+    locked: 0
+  - name: cells
+    uniqueID: 1138511771
     locked: 0
   m_RenderingLayers:
   - Default
