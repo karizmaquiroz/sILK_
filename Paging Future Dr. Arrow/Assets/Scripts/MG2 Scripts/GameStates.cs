@@ -96,9 +96,14 @@ public class GameStates : MonoBehaviour
             } else {
                 if (score < 4) {
                 stars1.SetActive(true);
-                } if (score < 7) {
+                }
+                if (score > 3 && score < 7) {
+                    stars1.SetActive(true);
                     stars2.SetActive(true);
-                } if (score == 9) {
+                }
+                if (score > 8) {
+                    stars1.SetActive(true);
+                    stars2.SetActive(true);
                     stars3.SetActive(true);
                 }
                 returnButton.SetActive(true);
