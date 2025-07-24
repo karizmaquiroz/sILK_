@@ -263,6 +263,61 @@ public class ClipboardController : MonoBehaviour
         canCloseNote = true;
     }
 
+    void PlayFlipAudio()
+    {
+        if (noteData.NotePageAudio != null)
+        {
+            NoteAudioManager.instance.Play(noteData.NotePageAudio);
+        }
+        else
+        {
+            Debug.Log("Note Scriptable on" + " " + noteData.name + ": Add a reference to the note flip sound Scriptable to the inspector");
+        }
+    }
+
+    public void NoteReadingAudio()
+    {
+        if (!audioPlaying)
+        {
+            PlayAudio();
+        }
+        else
+        {
+            PauseAudio();
+        }
+    }
+
+    public void RepeatReadingAudio()
+    {
+        StopAudio();
+        PlayAudio();
+    }
+
+    public void PlayAudio()
+    {
+        if (noteData.NoteReadAudio != null)
+        {
+            NoteAudioManager.instance.Play(noteData.NoteReadAudio);
+            audioPlaying = true;
+        }
+        else
+        {
+            Debug.Log("Note Scriptable on" + " " + noteData.name + ": Add a reference to the reading sound Scriptable to the inspector");
+        }
+    }
+
+    public void StopAudio()
+    {
+        NoteAudioManager.instance.StopPlaying(noteData.NoteReadAudio);
+        audioPlaying = false;
+    }
+
+    public void PauseAudio()
+    {
+        NoteAudioManager.instance.PausePlaying(noteData.NoteReadAudio);
+        audioPlaying = false;
+    }
+
 
 
 }

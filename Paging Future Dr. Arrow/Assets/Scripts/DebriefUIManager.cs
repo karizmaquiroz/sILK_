@@ -10,7 +10,8 @@ public class DebriefUIManager : MonoBehaviour
     [Header("Should persist?")]
     [SerializeField] private bool persistAcrossScenes = true;
 
-   
+    [Header("Audio Prompt UI")]
+    [SerializeField] private GameObject audioPromptUI = null;
 
     [Header("Page Buttons UI")]
     [SerializeField] private GameObject pageButtons = null;
@@ -203,6 +204,22 @@ public class DebriefUIManager : MonoBehaviour
         crosshair.enabled = hide;
     }
 
+    public void ShowAudioPrompt(bool show)
+    {
+        audioPromptUI.SetActive(show);
+    }
+
+    public void PlayPauseAudio()
+    {
+        NoteController.NoteReadingAudio();
+    }
+
+    public void RepeatAudio()
+    {
+        NoteController.RepeatReadingAudio();
+    }
+
+
     void DebugReferenceCheck()
     {
         if (crosshair == null)
@@ -220,7 +237,7 @@ public class DebriefUIManager : MonoBehaviour
     void FieldNullCheck()
     {
         // Checking each field and logging an error if it is null
-        
+        CheckField(audioPromptUI, "AudioPromptUI");
 
         CheckField(pageButtons, "PageButtons");
         CheckField(nextButton, "NextButton");

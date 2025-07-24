@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-//contains the eaycast for the notebook
+//contains the raycast for the notebook
 public class Inspect : MonoBehaviour
 {
     [Header("Raycast Features")]

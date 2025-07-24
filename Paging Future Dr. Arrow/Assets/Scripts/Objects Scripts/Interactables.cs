@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEditor;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 using static System.Net.Mime.MediaTypeNames;
@@ -13,6 +14,9 @@ using Text = UnityEngine.UI.Text;
 
 public class Interactables : MonoBehaviour
 {
+
+  
+
 
     [SerializeField] private ClipboardData noteData = null; //used for the clipboard debrief
 

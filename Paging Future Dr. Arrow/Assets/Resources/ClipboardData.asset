@@ -80,4 +80,9 @@ MonoBehaviour:
   overlayTextSize: 25
   overlayFontAsset: {fileID: 0}
   overlayFontColor: {r: 0, g: 0, b: 0, a: 1}
+  allowAudioPlayback: 0
+  showPlaybackButtons: 0
+  playOnOpen: 0
+  noteReadAudio: {fileID: 0}
+  notePageAudio: {fileID: 11400000, guid: 2e1bc7034f1192940a19ff030512fb0a, type: 2}
   isNoteTrigger: 0
