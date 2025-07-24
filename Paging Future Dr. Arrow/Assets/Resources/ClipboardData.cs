@@ -33,7 +33,12 @@ public class ClipboardData : ScriptableObject
     [SerializeField] private TMP_FontAsset overlayFontAsset = null;
     [SerializeField] private Color overlayFontColor = Color.black;
 
-   
+    [SerializeField] private bool allowAudioPlayback = false;
+    [SerializeField] private bool showPlaybackButtons = false;
+    [SerializeField] private bool playOnOpen = false;
+    [SerializeField] private Sound noteReadAudio = null;
+    [SerializeField] private Sound notePageAudio = null;
+
 
     [SerializeField] private bool isNoteTrigger = false;
 
@@ -58,7 +63,13 @@ public class ClipboardData : ScriptableObject
     public int OverlayTextSize => overlayTextSize;
     public TMP_FontAsset OverlayFontAsset => overlayFontAsset;
     public Color OverlayFontColor => overlayFontColor;
-    
-    
+
+    public bool AllowAudioPlayback => allowAudioPlayback;
+    public bool ShowPlaybackButtons => showPlaybackButtons;
+    public bool PlayOnOpen => playOnOpen;
+    public Sound NoteReadAudio => noteReadAudio;
+    public Sound NotePageAudio => notePageAudio;
+
+
     public bool IsNoteTrigger => isNoteTrigger;
 }

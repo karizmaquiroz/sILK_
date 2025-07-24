@@ -2399,6 +2399,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 469663513}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &500923151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 500923153}
+  - component: {fileID: 500923152}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &500923152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500923151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97b020f11976d94295b7470187714b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - {fileID: 11400000, guid: 2e1bc7034f1192940a19ff030512fb0a, type: 2}
+  mixerGroup: {fileID: 0}
+  persistAcrossScenes: 1
+--- !u!4 &500923153
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500923151}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.939407, y: 3.9166903, z: 77.3402}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &557198497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6583,6 +6631,52 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1435348538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1435348540}
+  - component: {fileID: 1435348539}
+  m_Layer: 0
+  m_Name: ClipboardController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1435348539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435348538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d199edd505486b4498dd0196a543e643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 164982462}
+  persistAcrossScenes: 1
+--- !u!4 &1435348540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435348538}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.939407, y: 3.9166903, z: 77.3402}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1443851992
 GameObject:
   m_ObjectHideFlags: 0
@@ -7416,16 +7510,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1214021932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa63ae00175d2644ebec300763244cb0, type: 3}
+  m_Script: {fileID: 11500000, guid: 933cb712e34370c4f914c4c8823aca01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   noteData: {fileID: 11400000, guid: 340ff99c68b9e5d47b38008b29c3e5ed, type: 2}
-  interaction_debrief_UI: {fileID: 0}
-  prompt: 
-  uiPanel: {fileID: 422471831}
-  promptText: {fileID: 0}
-  convo: {fileID: 0}
-  isDisplayed: 0
 --- !u!1 &1574722793
 GameObject:
   m_ObjectHideFlags: 0
@@ -7564,6 +7652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   persistAcrossScenes: 1
+  audioPromptUI: {fileID: 0}
   pageButtons: {fileID: 892137808}
   nextButton: {fileID: 24557705}
   previousButton: {fileID: 724453850}
@@ -8295,7 +8384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1950098296}
-  - component: {fileID: 1950098295}
+  - component: {fileID: 1950098297}
   m_Layer: 0
   m_Name: Clipboard-InputManager
   m_TagString: Untagged
@@ -8303,22 +8392,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1950098295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950098294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ca4e9e8a8b48e94dbbd77d044f40beb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactKey: 32
-  closeKey: 27
-  reverseKey: 8
-  persistAcrossScenes: 1
 --- !u!4 &1950098296
 Transform:
   m_ObjectHideFlags: 0
@@ -8334,6 +8407,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1950098297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950098294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca4e9e8a8b48e94dbbd77d044f40beb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactKey: 323
+  closeKey: 324
+  reverseKey: 8
+  persistAcrossScenes: 1
 --- !u!1001 &1974265801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8836,3 +8925,5 @@ SceneRoots:
   - {fileID: 1658745719}
   - {fileID: 1325966634}
   - {fileID: 1950098296}
+  - {fileID: 500923153}
+  - {fileID: 1435348540}
