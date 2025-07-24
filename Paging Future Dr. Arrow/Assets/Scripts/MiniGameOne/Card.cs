@@ -14,6 +14,12 @@ public class Card : MonoBehaviour
 
     public CardsController controller;
 
+    public int pairID;
+
+    public void SetPairID(int id)
+    {
+        pairID = id;
+    }
     public void OnCardClick()
     {
         controller.SetSelected(this);
