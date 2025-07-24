@@ -583,6 +583,7 @@ GameObject:
   - component: {fileID: 164982462}
   - component: {fileID: 164982464}
   - component: {fileID: 164982465}
+  - component: {fileID: 164982467}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -694,7 +695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63092f2d0143cde4da862a56b2b813ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 1.5
+  sensitivity: 0.89
   verticalLook: 1
 --- !u!54 &164982464
 Rigidbody:
@@ -736,6 +737,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 164982457}
+--- !u!82 &164982467
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164982457}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: de2542532cdf1004cb674626dbeaa53c, type: 3}
+  m_Resource: {fileID: 8300000, guid: de2542532cdf1004cb674626dbeaa53c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.31
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &250262874
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,10 +1298,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 10
-  m_Height: 15
+  m_Radius: 3.470049
+  m_Height: 26.005304
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.77461135, y: 0, z: -1.4328779}
 --- !u!114 &278701553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3482,7 +3580,7 @@ Transform:
   m_GameObject: {fileID: 841167369}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.8761778, y: 1.0999999, z: 88.55801}
+  m_LocalPosition: {x: 1.81, y: 1.0999999, z: 86.16}
   m_LocalScale: {x: 3.1567, y: 3.156701, z: 3.156701}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3562,8 +3660,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.0000002, z: 0.20000005}
-  m_Center: {x: -0.000000029802322, y: 0, z: -0.15}
+  m_Size: {x: 1, y: 1.0000002, z: 0.31311837}
+  m_Center: {x: -0.000000037763897, y: -9.704001e-16, z: -0.09344084}
 --- !u!1 &867607121
 GameObject:
   m_ObjectHideFlags: 0
@@ -4656,8 +4754,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1.0000002, z: 0.20000005}
-  m_Center: {x: -0.000000029802322, y: 0, z: -0.15}
+  m_Size: {x: 1, y: 1.0000002, z: 0.36829147}
+  m_Center: {x: -0.000000037763897, y: -3.5164054e-16, z: -0.06585424}
 --- !u!212 &1072672593
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8173,10 +8271,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 10
-  m_Height: 15
+  m_Radius: 3.15132
+  m_Height: 26.005295
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.0000005487486, y: 0, z: -1.0835408}
 --- !u!114 &1818693806
 MonoBehaviour:
   m_ObjectHideFlags: 0
