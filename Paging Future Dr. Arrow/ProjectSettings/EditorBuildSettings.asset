@@ -5,9 +5,21 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Delete Scene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Hospital and Narrative.unity
+    guid: e69d18b8133500644b5e6a3af3905932
+  - enabled: 1
+    path: Assets/Scenes/MiniGameOne.unity
+    guid: 6c5e88156def51a4abb00970f1df550e
+  - enabled: 1
+    path: Assets/Scenes/MG2.unity
+    guid: 90141c802cbef2e4698274c8db7f7684
+  - enabled: 1
+    path: Assets/Scenes/MG3.unity
+    guid: 46ad6d8eea4cece4a9a0cb6dd2afa4ee
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 77053729b31a9574a91e468e8030a39c, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 66d3c1a6d98468f41b24b319b25b8ca0, type: 2}

@@ -30,7 +30,7 @@ public class MoveSystem : MonoBehaviour
                 mousePos = Input.mousePosition;
                 mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-                this.gameObject.transform.position = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, this.gameObject.transform.localPosition.z);
+                this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, this.gameObject.transform.localPosition.z);
             }
         }
     }
@@ -45,8 +45,7 @@ public class MoveSystem : MonoBehaviour
             startPosX = mousePos.x - this.transform.localPosition.x;
             startPosY = mousePos.y - this.transform.localPosition.y;
 
-            startPosX = mousePos.x - this.transform.localPosition.x;
-            startPosY = mousePos.y - this.transform .localPosition.y;
+            
 
             moving = true;
 

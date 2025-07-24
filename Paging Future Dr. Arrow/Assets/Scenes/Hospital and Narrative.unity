@@ -409,7 +409,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 95285874}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 437170217}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: MiniGame1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &95285874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1897,6 +1909,7 @@ GameObject:
   - component: {fileID: 437170214}
   - component: {fileID: 437170213}
   - component: {fileID: 437170216}
+  - component: {fileID: 437170217}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2022,6 +2035,18 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &437170217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437170212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4711b5398e8f9484bbced8792f2fa427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &445887608
 GameObject:
   m_ObjectHideFlags: 0
@@ -6221,7 +6246,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1367404777}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 437170217}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: MiniGame2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1367404777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7758,7 +7795,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1681326063}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 437170217}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: MiniGame3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1681326063
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinScript : MonoBehaviour
 {
@@ -23,9 +24,14 @@ public class WinScript : MonoBehaviour
         {
             //win 
             transform.GetChild(0).gameObject.SetActive(true);
-            
+
+            FinishedGame();
         }
 
+    }
+    public void FinishedGame()
+    {
+        SceneManager.LoadScene("Hospital and Narrative");
     }
 
 
