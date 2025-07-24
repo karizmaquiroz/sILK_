@@ -572,7 +572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75494509942cb3b43a128e10c79dc8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctForm: {fileID: 1958085930}
 --- !u!61 &858809308
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -854,7 +853,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75494509942cb3b43a128e10c79dc8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctForm: {fileID: 1278322431}
 --- !u!61 &957348702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1002,7 +1000,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75494509942cb3b43a128e10c79dc8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctForm: {fileID: 1883177297}
 --- !u!61 &999149937
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1033,7 +1030,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1194,7 +1191,7 @@ GameObject:
   - component: {fileID: 1082298650}
   - component: {fileID: 1082298653}
   - component: {fileID: 1082298652}
-  - component: {fileID: 1082298651}
+  - component: {fileID: 1082298654}
   m_Layer: 0
   m_Name: red_blood_cell_small 1
   m_TagString: Untagged
@@ -1217,19 +1214,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 313710585}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1082298651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1082298649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75494509942cb3b43a128e10c79dc8c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  correctForm: {fileID: 2011938625}
 --- !u!61 &1082298652
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1260,7 +1244,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1331,6 +1315,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1082298654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082298649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75494509942cb3b43a128e10c79dc8c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1278322428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1925,7 +1921,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75494509942cb3b43a128e10c79dc8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctForm: {fileID: 917305648}
 --- !u!61 &1790517940
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2648,6 +2643,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2053305860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2053305862}
+  m_Layer: 0
+  m_Name: ItemManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2053305862
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053305860}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2661,3 +2687,4 @@ SceneRoots:
   - {fileID: 313710585}
   - {fileID: 1820535065}
   - {fileID: 1017772928}
+  - {fileID: 2053305862}
