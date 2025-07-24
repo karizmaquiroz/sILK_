@@ -2,36 +2,23 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float sensitivity = 1.5f;
-    public bool verticalLook = true;
+    public float rotationSpeed = 50f;
+    public Transform pivotPoint; // Assign in the Inspector (e.g., player's position)
 
-    private float xRotation = 0f;
-
-    void Start()
+    // Called when the Rotate Left button is clicked.
+    public void RotateLeft()
     {
-        // Keep cursor visible and free to move
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        RotateCamera(Vector3.left, -rotationSpeed); // Rotate around the Y-axis (left)
     }
 
-    void Update()
+    // Called when the Rotate Right button is clicked.
+    public void RotateRight()
     {
-        // Read raw mouse delta movement
-        float mouseX = Input.GetAxis("Mouse X") * sensitivity;
-        float mouseY = Input.GetAxis("Mouse Y") * sensitivity;
+        RotateCamera(Vector3.right, rotationSpeed); // Rotate around the Y-axis (right)
+    }
 
-        // Horizontal rotation (Y-axis)
-        transform.Rotate(Vector3.up * mouseX, Space.World);
-
-        if (verticalLook)
-        {
-            // Clamp vertical rotation (X-axis)
-            xRotation -= mouseY;
-            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-
-            Vector3 currentEuler = transform.eulerAngles;
-            currentEuler.x = xRotation;
-            transform.eulerAngles = new Vector3(xRotation, transform.eulerAngles.y, 0f);
-        }
+    private void RotateCamera(Vector3 axis, float angle)
+    {
+        transform.RotateAround(pivotPoint.position, axis, angle * Time.deltaTime);
     }
 }
