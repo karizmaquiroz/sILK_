@@ -1,12 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeScene : MonoBehaviour
+public class TESTTEST : MonoBehaviour
 {
     [Tooltip("Name of the scene to load when button is pressed")]
     public string sceneToLoad;
 
-    // This function can be linked to the button's OnClick() event
     public void Change()
     {
         if (!string.IsNullOrEmpty(sceneToLoad))
