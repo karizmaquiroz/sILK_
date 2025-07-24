@@ -31,7 +31,7 @@ public class WinScript : MonoBehaviour
     }
     public void FinishedGame()
     {
-        SceneManager.LoadScene("Hospital and Narrative");
+        SceneManager.LoadScene("Main Menu");
     }
 
 
