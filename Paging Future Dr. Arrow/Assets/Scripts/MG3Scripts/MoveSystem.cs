@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MoveSystem : MonoBehaviour
 {
-    public GameObject correctForm;
+    public Transform correctForm; //GameObject
     private bool moving;
     private bool finish;
 
@@ -13,14 +13,17 @@ public class MoveSystem : MonoBehaviour
     private float startPosY;
 
     private Vector3 resetPosition;
+    private Vector2 InitialPosition;
 
     private void Start()
     {
-        resetPosition = this.transform.localPosition;
+        //resetPosition = this.transform.localPosition;
+        InitialPosition = transform.position;
     }
 
     private void Update()
     {
+        /*
         if (finish == false)
         {
 
@@ -33,7 +36,44 @@ public class MoveSystem : MonoBehaviour
                 this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, this.gameObject.transform.localPosition.z);
             }
         }
+        */
+
+        if (Input.touchCount > 0 && !finish)
+        {
+            Touch touch = Input.GetTouch(0);
+            Vector2 touchPos = Camera.main.ScreenToWorldPoint(touch.position);
+
+            switch (touch.phase) 
+            {
+                case TouchPhase.Began:
+                    if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchPos))
+                    {
+                        startPosX = touchPos.x - transform.position.x;
+                        startPosY = touchPos.y - transform.position.y;
+                    }
+                    break;
+                case TouchPhase.Moved:
+                    if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(touchPos))
+                    {
+                        transform.position = new Vector2(touchPos.x - startPosX, touchPos.y - startPosY);
+                    }
+                    break;
+                case TouchPhase.Ended:
+                    if (Mathf.Abs(transform.position.x - correctForm.transform.position.x) <= 0.5f &&
+                        Mathf.Abs(transform.position.y - correctForm.transform.position.y) <= 0.5f)
+                    {
+                        transform.position = new Vector2(correctForm.position.x, correctForm.position.y);
+                        finish = true;
+                    }
+                    else
+                    {
+                        transform.position = new Vector2(InitialPosition.x, InitialPosition.y);
+                    }
+                        break;
+            }
     }
+
+    /*
     private void OnMouseDown()
     {
         if (Input.GetMouseButtonDown(0))
@@ -50,6 +90,7 @@ public class MoveSystem : MonoBehaviour
             moving = true;
 
         }
+        
     }
     private void OnMouseUp() 
     {
@@ -70,5 +111,8 @@ public class MoveSystem : MonoBehaviour
             this.transform.localPosition = new Vector3(resetPosition.x, resetPosition.y, resetPosition.z);
         }
     }
-
+    */
+    }
+    
 }
+
