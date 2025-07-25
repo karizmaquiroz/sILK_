@@ -1,11 +1,6 @@
 using TMPro;
-using UnityEditor;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
-using static System.Net.Mime.MediaTypeNames;
-using static UnityEditor.FilePathAttribute;
-using static UnityEngine.AdaptivePerformance.Provider.AdaptivePerformanceSubsystemDescriptor;
 using Text = UnityEngine.UI.Text;
 
 
