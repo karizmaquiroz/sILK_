@@ -1,13 +1,15 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TutUI : MonoBehaviour
 {
-
-    public void DestroyParent()
+    public GameObject screen;
+   
+    public void OnTriggerEnter(Collider other)
     {
-        if (transform.parent != null)
+        if (other.CompareTag("Player"))
         {
-            Destroy(transform.parent.gameObject);
+            screen.SetActive(true);
         }
     }
 }
